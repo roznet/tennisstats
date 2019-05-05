@@ -1,0 +1,1827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4226B41A1F65D398009E1104 /* TSSessionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226B4191F65D398009E1104 /* TSSessionListTableViewController.swift */; };
+		42280D411F5477C000724581 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42280D401F5477C000724581 /* CloudKit.framework */; };
+		42306C311F5C5F7500FC7CCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428FF70F15F36888007A88FA /* Foundation.framework */; };
+		42306C321F5C5F7D00FC7CCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428FF70D15F36888007A88FA /* UIKit.framework */; };
+		42306C341F5C5FC400FC7CCB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42306C331F5C5FC400FC7CCB /* XCTest.framework */; };
+		423F541D1F6C716D004471E6 /* GCAppGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 423F541C1F6C716D004471E6 /* GCAppGlobal.m */; };
+		42AA8D731F547151009734D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D721F547151009734D4 /* main.m */; };
+		42AA8DFE1F5471AB009734D4 /* CKRecord+TennisSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D8E1F5471AB009734D4 /* CKRecord+TennisSession.m */; };
+		42AA8DFF1F5471AB009734D4 /* TSAnalysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D901F5471AB009734D4 /* TSAnalysis.m */; };
+		42AA8E001F5471AB009734D4 /* TSAnalysisTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D921F5471AB009734D4 /* TSAnalysisTracker.m */; };
+		42AA8E011F5471AB009734D4 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D951F5471AB009734D4 /* TSAppDelegate.m */; };
+		42AA8E021F5471AB009734D4 /* TSAppGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D971F5471AB009734D4 /* TSAppGlobal.m */; };
+		42AA8E031F5471AB009734D4 /* TSCloudOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D991F5471AB009734D4 /* TSCloudOrganizer.m */; };
+		42AA8E041F5471AB009734D4 /* TSCloudSessionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D9B1F5471AB009734D4 /* TSCloudSessionListTableViewController.m */; };
+		42AA8E051F5471AB009734D4 /* TSCloudTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D9D1F5471AB009734D4 /* TSCloudTypes.m */; };
+		42AA8E061F5471AB009734D4 /* TSCourtReportAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8D9F1F5471AB009734D4 /* TSCourtReportAnnotationView.m */; };
+		42AA8E071F5471AB009734D4 /* TSCourtReportConfigTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DA11F5471AB009734D4 /* TSCourtReportConfigTableViewController.m */; };
+		42AA8E081F5471AB009734D4 /* TSCourtReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DA31F5471AB009734D4 /* TSCourtReportViewController.m */; };
+		42AA8E091F5471AB009734D4 /* TSPlayer+Cells.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DA51F5471AB009734D4 /* TSPlayer+Cells.m */; };
+		42AA8E0A1F5471AB009734D4 /* TSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DA71F5471AB009734D4 /* TSPlayer.m */; };
+		42AA8E0B1F5471AB009734D4 /* TSPlayerEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DA91F5471AB009734D4 /* TSPlayerEditViewController.m */; };
+		42AA8E0C1F5471AB009734D4 /* TSPlayerEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8DAA1F5471AB009734D4 /* TSPlayerEditViewController.xib */; };
+		42AA8E0D1F5471AB009734D4 /* TSPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DAC1F5471AB009734D4 /* TSPlayerManager.m */; };
+		42AA8E0E1F5471AB009734D4 /* TSPlotAnalysisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DAE1F5471AB009734D4 /* TSPlotAnalysisTableViewController.m */; };
+		42AA8E0F1F5471AB009734D4 /* TSReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DB01F5471AB009734D4 /* TSReport.m */; };
+		42AA8E101F5471AB009734D4 /* TSReportElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DB21F5471AB009734D4 /* TSReportElement.m */; };
+		42AA8E111F5471AB009734D4 /* TSReportElementPivot.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DB41F5471AB009734D4 /* TSReportElementPivot.m */; };
+		42AA8E121F5471AB009734D4 /* TSReportListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DB61F5471AB009734D4 /* TSReportListTableViewController.m */; };
+		42AA8E131F5471AB009734D4 /* TSReportOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DB81F5471AB009734D4 /* TSReportOrganizer.m */; };
+		42AA8E141F5471AB009734D4 /* TSResultEditOneRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DBA1F5471AB009734D4 /* TSResultEditOneRow.m */; };
+		42AA8E151F5471AB009734D4 /* TSResultEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DBC1F5471AB009734D4 /* TSResultEditViewController.m */; };
+		42AA8E171F5471AB009734D4 /* TSSessionEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DC01F5471AB009734D4 /* TSSessionEditTableViewController.m */; };
+		42AA8E181F5471AB009734D4 /* TSSessionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DC21F5471AB009734D4 /* TSSessionListViewController.m */; };
+		42AA8E191F5471AB009734D4 /* TSSessionReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DC41F5471AB009734D4 /* TSSessionReport.m */; };
+		42AA8E1A1F5471AB009734D4 /* TSSessionReportPivot.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DC61F5471AB009734D4 /* TSSessionReportPivot.m */; };
+		42AA8E1B1F5471AB009734D4 /* TSSessionSetupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DC81F5471AB009734D4 /* TSSessionSetupTableViewController.m */; };
+		42AA8E1C1F5471AB009734D4 /* TSSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DCA1F5471AB009734D4 /* TSSplitViewController.m */; };
+		42AA8E1D1F5471AB009734D4 /* TSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DCC1F5471AB009734D4 /* TSTabBarViewController.m */; };
+		42AA8E1E1F5471AB009734D4 /* TSTagIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DCE1F5471AB009734D4 /* TSTagIcons.m */; };
+		42AA8E1F1F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DD11F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.m */; };
+		42AA8E201F5471AB009734D4 /* TSTennisCourtAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DD31F5471AB009734D4 /* TSTennisCourtAnnotationView.m */; };
+		42AA8E211F5471AB009734D4 /* TSTennisCourtGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DD51F5471AB009734D4 /* TSTennisCourtGeometry.m */; };
+		42AA8E221F5471AB009734D4 /* TSTennisCourtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DD71F5471AB009734D4 /* TSTennisCourtView.m */; };
+		42AA8E231F5471AB009734D4 /* TSTennisCourtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DD91F5471AB009734D4 /* TSTennisCourtViewController.m */; };
+		42AA8E241F5471AB009734D4 /* TSTennisEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DDB1F5471AB009734D4 /* TSTennisEvent.m */; };
+		42AA8E251F5471AB009734D4 /* TSTennisFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DDD1F5471AB009734D4 /* TSTennisFields.m */; };
+		42AA8E261F5471AB009734D4 /* TSTennisIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DDF1F5471AB009734D4 /* TSTennisIcons.m */; };
+		42AA8E271F5471AB009734D4 /* TSTennisOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DE11F5471AB009734D4 /* TSTennisOrganizer.m */; };
+		42AA8E281F5471AB009734D4 /* TSTennisRally.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DE31F5471AB009734D4 /* TSTennisRally.m */; };
+		42AA8E291F5471AB009734D4 /* TSTennisRallyResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DE51F5471AB009734D4 /* TSTennisRallyResultView.m */; };
+		42AA8E2A1F5471AB009734D4 /* TSTennisResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DE71F5471AB009734D4 /* TSTennisResult.m */; };
+		42AA8E2B1F5471AB009734D4 /* TSTennisResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DE91F5471AB009734D4 /* TSTennisResultSet.m */; };
+		42AA8E2C1F5471AB009734D4 /* TSTennisScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DEB1F5471AB009734D4 /* TSTennisScore.m */; };
+		42AA8E2D1F5471AB009734D4 /* TSTennisScorePanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DED1F5471AB009734D4 /* TSTennisScorePanelView.m */; };
+		42AA8E2E1F5471AB009734D4 /* TSTennisScoreRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DEF1F5471AB009734D4 /* TSTennisScoreRule.m */; };
+		42AA8E2F1F5471AB009734D4 /* TSTennisSession+Cells.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DF11F5471AB009734D4 /* TSTennisSession+Cells.m */; };
+		42AA8E301F5471AB009734D4 /* TSTennisSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DF31F5471AB009734D4 /* TSTennisSession.m */; };
+		42AA8E311F5471AB009734D4 /* TSTennisSessionState+Cells.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DF51F5471AB009734D4 /* TSTennisSessionState+Cells.m */; };
+		42AA8E321F5471AB009734D4 /* TSTennisSessionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DF71F5471AB009734D4 /* TSTennisSessionState.m */; };
+		42AA8E331F5471AB009734D4 /* TSTennisShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DF91F5471AB009734D4 /* TSTennisShot.m */; };
+		42AA8E341F5471AB009734D4 /* TSTennisTagSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DFB1F5471AB009734D4 /* TSTennisTagSelectionView.m */; };
+		42AA8E351F5471AB009734D4 /* TSWebReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA8DFD1F5471AB009734D4 /* TSWebReportViewController.m */; };
+		42AA8E461F5471DE009734D4 /* reportbody.html in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E371F5471DD009734D4 /* reportbody.html */; };
+		42AA8E471F5471DE009734D4 /* reportfooter.html in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E381F5471DD009734D4 /* reportfooter.html */; };
+		42AA8E481F5471DE009734D4 /* reportheader.html in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E391F5471DD009734D4 /* reportheader.html */; };
+		42AA8E491F5471DE009734D4 /* StatsDescription.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E3A1F5471DD009734D4 /* StatsDescription.pdf */; };
+		42AA8E4A1F5471DE009734D4 /* table.css in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E3B1F5471DD009734D4 /* table.css */; };
+		42AA8E4C1F5471DE009734D4 /* TennisLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E3E1F5471DD009734D4 /* TennisLaunchScreen.xib */; };
+		42AA8E531F5471DE009734D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AA8E451F5471DE009734D4 /* Images.xcassets */; };
+		42AA8E581F5474AC009734D4 /* RZUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423D5C281D27F1C20068D9CE /* RZUtils.framework */; };
+		42AA8E591F5474AC009734D4 /* RZUtilsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425872BF1EACA089000D4115 /* RZUtilsSwift.framework */; };
+		42AA8E5A1F5474AC009734D4 /* RZUtilsTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BF1FE91D3AC233004445C2 /* RZUtilsTouch.framework */; };
+		42AA8E5B1F5474AC009734D4 /* RZUtilsUniversal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F3FBF51DD79D910042A9B1 /* RZUtilsUniversal.framework */; };
+		42AA8E5D1F5474BF009734D4 /* RZUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 423D5C281D27F1C20068D9CE /* RZUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42AA8E611F5474BF009734D4 /* RZUtilsSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 425872BF1EACA089000D4115 /* RZUtilsSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42AA8E651F5474BF009734D4 /* RZUtilsUniversal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F3FBF51DD79D910042A9B1 /* RZUtilsUniversal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42AA8E691F5474BF009734D4 /* RZUtilsTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42BF1FE91D3AC233004445C2 /* RZUtilsTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42C82AB0201FC4C600A23815 /* TSTennisSession+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C82A93201FC4A900A23815 /* TSTennisSession+Test.m */; };
+		42C82AB1201FC4C600A23815 /* TSTestDataPivot.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C82A9F201FC4AA00A23815 /* TSTestDataPivot.m */; };
+		42C82AB2201FC4C600A23815 /* TSTestOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C82A94201FC4A900A23815 /* TSTestOrganizer.m */; };
+		42C82AB3201FC4C600A23815 /* TSTestPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C82AA0201FC4AA00A23815 /* TSTestPlayers.m */; };
+		42C82AB4201FC4C600A23815 /* TSTestTennisSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C82A95201FC4A900A23815 /* TSTestTennisSession.m */; };
+		42C82AB5201FC4CE00A23815 /* session_201411011705.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A97201FC4AA00A23815 /* session_201411011705.db */; };
+		42C82AB6201FC4CE00A23815 /* session_test_large.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A98201FC4AA00A23815 /* session_test_large.db */; };
+		42C82AB7201FC4CE00A23815 /* session_201410122156.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A99201FC4AA00A23815 /* session_201410122156.db */; };
+		42C82AB8201FC4CE00A23815 /* session_201410180916.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A9A201FC4AA00A23815 /* session_201410180916.db */; };
+		42C82AB9201FC4CE00A23815 /* session_20150117170928.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A9B201FC4AA00A23815 /* session_20150117170928.db */; };
+		42C82ABA201FC4CE00A23815 /* session_201411221859.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A9C201FC4AA00A23815 /* session_201411221859.db */; };
+		42C82ABB201FC4CE00A23815 /* cloud_session_20150708164712.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A9D201FC4AA00A23815 /* cloud_session_20150708164712.db */; };
+		42C82ABC201FC4CE00A23815 /* session_20150117100009.db in Resources */ = {isa = PBXBuildFile; fileRef = 42C82A9E201FC4AA00A23815 /* session_20150117100009.db */; };
+		42C82AC1201FCF0500A23815 /* TSScoreRuleEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C82ABF201FCF0500A23815 /* TSScoreRuleEditorViewController.swift */; };
+		42C82AC2201FCF0500A23815 /* TSScoreRuleEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C82AC0201FCF0500A23815 /* TSScoreRuleEditorViewController.xib */; };
+		59E4EC235662135D543715DF /* libPods-tennisstats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3665CA8D2236812ED0C4EBE1 /* libPods-tennisstats.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		423D5C271D27F1C20068D9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42249D8819BE3D3A00D2DAA0;
+			remoteInfo = RZUtils;
+		};
+		423D5C291D27F1C20068D9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42249D9319BE3D3B00D2DAA0;
+			remoteInfo = RZUtilsTests;
+		};
+		423D5C2B1D27F1C20068D9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4288E4E21A33101F0079890C;
+			remoteInfo = RZUtilsOSX;
+		};
+		423D5C2D1D27F1C20068D9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4288E4EC1A33101F0079890C;
+			remoteInfo = RZUtilsOSXTests;
+		};
+		424968652218886C00776D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 422C59312211E43C004AC730;
+			remoteInfo = RZFitFile;
+		};
+		424968672218886C00776D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 422C59392211E43C004AC730;
+			remoteInfo = RZFitFileTests;
+		};
+		424968692218886C00776D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 422C59632211EC48004AC730;
+			remoteInfo = fitios;
+		};
+		4249686B2218886C00776D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4249682322187F7E00776D68;
+			remoteInfo = fitmacos;
+		};
+		4249686D2218886C00776D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42584E5B21CBF57900B7E021;
+			remoteInfo = fitparse;
+		};
+		425872BE1EACA089000D4115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382A451EAB584600252217;
+			remoteInfo = RZUtilsSwift;
+		};
+		425872C01EACA089000D4115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382A4D1EAB584600252217;
+			remoteInfo = RZUtilsSwiftTests;
+		};
+		425872C21EACA089000D4115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382AAA1EAC824900252217;
+			remoteInfo = RZUtilsHealthkit;
+		};
+		425872C41EACA089000D4115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382AB21EAC824900252217;
+			remoteInfo = RZUtilsHealthkitTests;
+		};
+		428BE87E20013DF600E14A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 428BE85420013D4200E14A61;
+			remoteInfo = RZUtilsTestInfra;
+		};
+		42A0098520012B5B00019CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42A007BF20012ADC00019CB3;
+			remoteInfo = RZExternalCpp;
+		};
+		42AA8D791F547151009734D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 428FF70015F36888007A88FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42AA8D601F547151009734D4;
+			remoteInfo = tennisstats;
+		};
+		42AA8E5E1F5474BF009734D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 423829261EAB534100252217;
+			remoteInfo = RZUtils;
+		};
+		42AA8E621F5474BF009734D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42382A441EAB584600252217;
+			remoteInfo = RZUtilsSwift;
+		};
+		42AA8E661F5474BF009734D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42382A6B1EABA4AC00252217;
+			remoteInfo = RZUtilsUniversal;
+		};
+		42AA8E6A1F5474BF009734D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42382ACF1EAC9BC700252217;
+			remoteInfo = RZUtilsTouch;
+		};
+		42BF1FE81D3AC233004445C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42BF1F831D3ABC34004445C2;
+			remoteInfo = RZUtilsTouch;
+		};
+		42BF1FEA1D3AC233004445C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42BF1F8C1D3ABC34004445C2;
+			remoteInfo = RZUtilsTouchTests;
+		};
+		42C82A8B201FBEDD00A23815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42248C022014E16A006ADC90;
+			remoteInfo = RZExternalUniversal;
+		};
+		42EBBEDE1FFAB5400009B385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42B263CF1FF8309700E891A1;
+			remoteInfo = RZExternal;
+		};
+		42EBC0301FFAE1000009B385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42EBC0201FFAC18A0009B385;
+			remoteInfo = RZExternalTestUtils;
+		};
+		42F3FBF41DD79D910042A9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42F3FBAB1DD794650042A9B1;
+			remoteInfo = RZUtilsUniversal;
+		};
+		42F3FBF61DD79D910042A9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42F3FBB31DD794650042A9B1;
+			remoteInfo = RZUtilsUniversalTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42AA8E6C1F5474BF009734D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42AA8E611F5474BF009734D4 /* RZUtilsSwift.framework in Embed Frameworks */,
+				42AA8E5D1F5474BF009734D4 /* RZUtils.framework in Embed Frameworks */,
+				42AA8E691F5474BF009734D4 /* RZUtilsTouch.framework in Embed Frameworks */,
+				42AA8E651F5474BF009734D4 /* RZUtilsUniversal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FDCC27AED29AB0F64BE174E /* libPods-HealthStats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthStats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3665CA8D2236812ED0C4EBE1 /* libPods-tennisstats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tennisstats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42200E9C17EEF0EC0078B45A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4226B4181F65D398009E1104 /* tennisstats-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tennisstats-Bridging-Header.h"; sourceTree = "<group>"; };
+		4226B4191F65D398009E1104 /* TSSessionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSessionListTableViewController.swift; sourceTree = "<group>"; };
+		42280D401F5477C000724581 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		42306C331F5C5FC400FC7CCB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		423494421609275E00A770D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		423494441609276B00A770D6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RZUtils.xcodeproj; path = RZUtils/RZUtils.xcodeproj; sourceTree = "<group>"; };
+		423F541B1F6C716D004471E6 /* GCAppGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppGlobal.h; sourceTree = "<group>"; };
+		423F541C1F6C716D004471E6 /* GCAppGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppGlobal.m; sourceTree = "<group>"; };
+		4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fit-sdk-swift.xcodeproj"; path = "fit-sdk-swift/fit-sdk-swift.xcodeproj"; sourceTree = "<group>"; };
+		424B7F2916CB049A000B38AD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		428FF70D15F36888007A88FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		428FF70F15F36888007A88FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		428FF71115F36888007A88FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42A66BDA160D0A0800DA29A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		42AA8D611F547151009734D4 /* tennisstats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tennisstats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AA8D711F547151009734D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AA8D721F547151009734D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42AA8D781F547151009734D4 /* tennisstatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tennisstatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AA8D7E1F547151009734D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AA8D8D1F5471AB009734D4 /* CKRecord+TennisSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKRecord+TennisSession.h"; sourceTree = "<group>"; };
+		42AA8D8E1F5471AB009734D4 /* CKRecord+TennisSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CKRecord+TennisSession.m"; sourceTree = "<group>"; };
+		42AA8D8F1F5471AB009734D4 /* TSAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAnalysis.h; sourceTree = "<group>"; };
+		42AA8D901F5471AB009734D4 /* TSAnalysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAnalysis.m; sourceTree = "<group>"; };
+		42AA8D911F5471AB009734D4 /* TSAnalysisTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAnalysisTracker.h; sourceTree = "<group>"; };
+		42AA8D921F5471AB009734D4 /* TSAnalysisTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAnalysisTracker.m; sourceTree = "<group>"; };
+		42AA8D931F5471AB009734D4 /* TSAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAppConstants.h; sourceTree = "<group>"; };
+		42AA8D941F5471AB009734D4 /* TSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
+		42AA8D951F5471AB009734D4 /* TSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
+		42AA8D961F5471AB009734D4 /* TSAppGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAppGlobal.h; sourceTree = "<group>"; };
+		42AA8D971F5471AB009734D4 /* TSAppGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAppGlobal.m; sourceTree = "<group>"; };
+		42AA8D981F5471AB009734D4 /* TSCloudOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCloudOrganizer.h; sourceTree = "<group>"; };
+		42AA8D991F5471AB009734D4 /* TSCloudOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCloudOrganizer.m; sourceTree = "<group>"; };
+		42AA8D9A1F5471AB009734D4 /* TSCloudSessionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCloudSessionListTableViewController.h; sourceTree = "<group>"; };
+		42AA8D9B1F5471AB009734D4 /* TSCloudSessionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCloudSessionListTableViewController.m; sourceTree = "<group>"; };
+		42AA8D9C1F5471AB009734D4 /* TSCloudTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCloudTypes.h; sourceTree = "<group>"; };
+		42AA8D9D1F5471AB009734D4 /* TSCloudTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCloudTypes.m; sourceTree = "<group>"; };
+		42AA8D9E1F5471AB009734D4 /* TSCourtReportAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCourtReportAnnotationView.h; sourceTree = "<group>"; };
+		42AA8D9F1F5471AB009734D4 /* TSCourtReportAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCourtReportAnnotationView.m; sourceTree = "<group>"; };
+		42AA8DA01F5471AB009734D4 /* TSCourtReportConfigTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCourtReportConfigTableViewController.h; sourceTree = "<group>"; };
+		42AA8DA11F5471AB009734D4 /* TSCourtReportConfigTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCourtReportConfigTableViewController.m; sourceTree = "<group>"; };
+		42AA8DA21F5471AB009734D4 /* TSCourtReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCourtReportViewController.h; sourceTree = "<group>"; };
+		42AA8DA31F5471AB009734D4 /* TSCourtReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCourtReportViewController.m; sourceTree = "<group>"; };
+		42AA8DA41F5471AB009734D4 /* TSPlayer+Cells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSPlayer+Cells.h"; sourceTree = "<group>"; };
+		42AA8DA51F5471AB009734D4 /* TSPlayer+Cells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSPlayer+Cells.m"; sourceTree = "<group>"; };
+		42AA8DA61F5471AB009734D4 /* TSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlayer.h; sourceTree = "<group>"; };
+		42AA8DA71F5471AB009734D4 /* TSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayer.m; sourceTree = "<group>"; };
+		42AA8DA81F5471AB009734D4 /* TSPlayerEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlayerEditViewController.h; sourceTree = "<group>"; };
+		42AA8DA91F5471AB009734D4 /* TSPlayerEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayerEditViewController.m; sourceTree = "<group>"; };
+		42AA8DAA1F5471AB009734D4 /* TSPlayerEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSPlayerEditViewController.xib; sourceTree = "<group>"; };
+		42AA8DAB1F5471AB009734D4 /* TSPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlayerManager.h; sourceTree = "<group>"; };
+		42AA8DAC1F5471AB009734D4 /* TSPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlayerManager.m; sourceTree = "<group>"; };
+		42AA8DAD1F5471AB009734D4 /* TSPlotAnalysisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPlotAnalysisTableViewController.h; sourceTree = "<group>"; };
+		42AA8DAE1F5471AB009734D4 /* TSPlotAnalysisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPlotAnalysisTableViewController.m; sourceTree = "<group>"; };
+		42AA8DAF1F5471AB009734D4 /* TSReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSReport.h; sourceTree = "<group>"; };
+		42AA8DB01F5471AB009734D4 /* TSReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSReport.m; sourceTree = "<group>"; };
+		42AA8DB11F5471AB009734D4 /* TSReportElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSReportElement.h; sourceTree = "<group>"; };
+		42AA8DB21F5471AB009734D4 /* TSReportElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSReportElement.m; sourceTree = "<group>"; };
+		42AA8DB31F5471AB009734D4 /* TSReportElementPivot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSReportElementPivot.h; sourceTree = "<group>"; };
+		42AA8DB41F5471AB009734D4 /* TSReportElementPivot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSReportElementPivot.m; sourceTree = "<group>"; };
+		42AA8DB51F5471AB009734D4 /* TSReportListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSReportListTableViewController.h; sourceTree = "<group>"; };
+		42AA8DB61F5471AB009734D4 /* TSReportListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSReportListTableViewController.m; sourceTree = "<group>"; };
+		42AA8DB71F5471AB009734D4 /* TSReportOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSReportOrganizer.h; sourceTree = "<group>"; };
+		42AA8DB81F5471AB009734D4 /* TSReportOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSReportOrganizer.m; sourceTree = "<group>"; };
+		42AA8DB91F5471AB009734D4 /* TSResultEditOneRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResultEditOneRow.h; sourceTree = "<group>"; };
+		42AA8DBA1F5471AB009734D4 /* TSResultEditOneRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResultEditOneRow.m; sourceTree = "<group>"; };
+		42AA8DBB1F5471AB009734D4 /* TSResultEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResultEditViewController.h; sourceTree = "<group>"; };
+		42AA8DBC1F5471AB009734D4 /* TSResultEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResultEditViewController.m; sourceTree = "<group>"; };
+		42AA8DBF1F5471AB009734D4 /* TSSessionEditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSessionEditTableViewController.h; sourceTree = "<group>"; };
+		42AA8DC01F5471AB009734D4 /* TSSessionEditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSessionEditTableViewController.m; sourceTree = "<group>"; };
+		42AA8DC11F5471AB009734D4 /* TSSessionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSessionListViewController.h; sourceTree = "<group>"; };
+		42AA8DC21F5471AB009734D4 /* TSSessionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSessionListViewController.m; sourceTree = "<group>"; };
+		42AA8DC31F5471AB009734D4 /* TSSessionReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSessionReport.h; sourceTree = "<group>"; };
+		42AA8DC41F5471AB009734D4 /* TSSessionReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSessionReport.m; sourceTree = "<group>"; };
+		42AA8DC51F5471AB009734D4 /* TSSessionReportPivot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSessionReportPivot.h; sourceTree = "<group>"; };
+		42AA8DC61F5471AB009734D4 /* TSSessionReportPivot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSessionReportPivot.m; sourceTree = "<group>"; };
+		42AA8DC71F5471AB009734D4 /* TSSessionSetupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSessionSetupTableViewController.h; sourceTree = "<group>"; };
+		42AA8DC81F5471AB009734D4 /* TSSessionSetupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSessionSetupTableViewController.m; sourceTree = "<group>"; };
+		42AA8DC91F5471AB009734D4 /* TSSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSplitViewController.h; sourceTree = "<group>"; };
+		42AA8DCA1F5471AB009734D4 /* TSSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSplitViewController.m; sourceTree = "<group>"; };
+		42AA8DCB1F5471AB009734D4 /* TSTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabBarViewController.h; sourceTree = "<group>"; };
+		42AA8DCC1F5471AB009734D4 /* TSTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabBarViewController.m; sourceTree = "<group>"; };
+		42AA8DCD1F5471AB009734D4 /* TSTagIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTagIcons.h; sourceTree = "<group>"; };
+		42AA8DCE1F5471AB009734D4 /* TSTagIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTagIcons.m; sourceTree = "<group>"; };
+		42AA8DCF1F5471AB009734D4 /* TSTennis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennis.h; sourceTree = "<group>"; };
+		42AA8DD01F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisCourtAnnotatedLocation.h; sourceTree = "<group>"; };
+		42AA8DD11F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisCourtAnnotatedLocation.m; sourceTree = "<group>"; };
+		42AA8DD21F5471AB009734D4 /* TSTennisCourtAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisCourtAnnotationView.h; sourceTree = "<group>"; };
+		42AA8DD31F5471AB009734D4 /* TSTennisCourtAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisCourtAnnotationView.m; sourceTree = "<group>"; };
+		42AA8DD41F5471AB009734D4 /* TSTennisCourtGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisCourtGeometry.h; sourceTree = "<group>"; };
+		42AA8DD51F5471AB009734D4 /* TSTennisCourtGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisCourtGeometry.m; sourceTree = "<group>"; };
+		42AA8DD61F5471AB009734D4 /* TSTennisCourtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisCourtView.h; sourceTree = "<group>"; };
+		42AA8DD71F5471AB009734D4 /* TSTennisCourtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisCourtView.m; sourceTree = "<group>"; };
+		42AA8DD81F5471AB009734D4 /* TSTennisCourtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisCourtViewController.h; sourceTree = "<group>"; };
+		42AA8DD91F5471AB009734D4 /* TSTennisCourtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisCourtViewController.m; sourceTree = "<group>"; };
+		42AA8DDA1F5471AB009734D4 /* TSTennisEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisEvent.h; sourceTree = "<group>"; };
+		42AA8DDB1F5471AB009734D4 /* TSTennisEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisEvent.m; sourceTree = "<group>"; };
+		42AA8DDC1F5471AB009734D4 /* TSTennisFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisFields.h; sourceTree = "<group>"; };
+		42AA8DDD1F5471AB009734D4 /* TSTennisFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisFields.m; sourceTree = "<group>"; };
+		42AA8DDE1F5471AB009734D4 /* TSTennisIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisIcons.h; sourceTree = "<group>"; };
+		42AA8DDF1F5471AB009734D4 /* TSTennisIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisIcons.m; sourceTree = "<group>"; };
+		42AA8DE01F5471AB009734D4 /* TSTennisOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisOrganizer.h; sourceTree = "<group>"; };
+		42AA8DE11F5471AB009734D4 /* TSTennisOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisOrganizer.m; sourceTree = "<group>"; };
+		42AA8DE21F5471AB009734D4 /* TSTennisRally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisRally.h; sourceTree = "<group>"; };
+		42AA8DE31F5471AB009734D4 /* TSTennisRally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisRally.m; sourceTree = "<group>"; };
+		42AA8DE41F5471AB009734D4 /* TSTennisRallyResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisRallyResultView.h; sourceTree = "<group>"; };
+		42AA8DE51F5471AB009734D4 /* TSTennisRallyResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisRallyResultView.m; sourceTree = "<group>"; };
+		42AA8DE61F5471AB009734D4 /* TSTennisResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisResult.h; sourceTree = "<group>"; };
+		42AA8DE71F5471AB009734D4 /* TSTennisResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisResult.m; sourceTree = "<group>"; };
+		42AA8DE81F5471AB009734D4 /* TSTennisResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisResultSet.h; sourceTree = "<group>"; };
+		42AA8DE91F5471AB009734D4 /* TSTennisResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisResultSet.m; sourceTree = "<group>"; };
+		42AA8DEA1F5471AB009734D4 /* TSTennisScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisScore.h; sourceTree = "<group>"; };
+		42AA8DEB1F5471AB009734D4 /* TSTennisScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisScore.m; sourceTree = "<group>"; };
+		42AA8DEC1F5471AB009734D4 /* TSTennisScorePanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisScorePanelView.h; sourceTree = "<group>"; };
+		42AA8DED1F5471AB009734D4 /* TSTennisScorePanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisScorePanelView.m; sourceTree = "<group>"; };
+		42AA8DEE1F5471AB009734D4 /* TSTennisScoreRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisScoreRule.h; sourceTree = "<group>"; };
+		42AA8DEF1F5471AB009734D4 /* TSTennisScoreRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisScoreRule.m; sourceTree = "<group>"; };
+		42AA8DF01F5471AB009734D4 /* TSTennisSession+Cells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSTennisSession+Cells.h"; sourceTree = "<group>"; };
+		42AA8DF11F5471AB009734D4 /* TSTennisSession+Cells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSTennisSession+Cells.m"; sourceTree = "<group>"; };
+		42AA8DF21F5471AB009734D4 /* TSTennisSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisSession.h; sourceTree = "<group>"; };
+		42AA8DF31F5471AB009734D4 /* TSTennisSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisSession.m; sourceTree = "<group>"; };
+		42AA8DF41F5471AB009734D4 /* TSTennisSessionState+Cells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSTennisSessionState+Cells.h"; sourceTree = "<group>"; };
+		42AA8DF51F5471AB009734D4 /* TSTennisSessionState+Cells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSTennisSessionState+Cells.m"; sourceTree = "<group>"; };
+		42AA8DF61F5471AB009734D4 /* TSTennisSessionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisSessionState.h; sourceTree = "<group>"; };
+		42AA8DF71F5471AB009734D4 /* TSTennisSessionState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisSessionState.m; sourceTree = "<group>"; };
+		42AA8DF81F5471AB009734D4 /* TSTennisShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisShot.h; sourceTree = "<group>"; };
+		42AA8DF91F5471AB009734D4 /* TSTennisShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisShot.m; sourceTree = "<group>"; };
+		42AA8DFA1F5471AB009734D4 /* TSTennisTagSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTennisTagSelectionView.h; sourceTree = "<group>"; };
+		42AA8DFB1F5471AB009734D4 /* TSTennisTagSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTennisTagSelectionView.m; sourceTree = "<group>"; };
+		42AA8DFC1F5471AB009734D4 /* TSWebReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWebReportViewController.h; sourceTree = "<group>"; };
+		42AA8DFD1F5471AB009734D4 /* TSWebReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebReportViewController.m; sourceTree = "<group>"; };
+		42AA8E371F5471DD009734D4 /* reportbody.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reportbody.html; sourceTree = "<group>"; };
+		42AA8E381F5471DD009734D4 /* reportfooter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reportfooter.html; sourceTree = "<group>"; };
+		42AA8E391F5471DD009734D4 /* reportheader.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reportheader.html; sourceTree = "<group>"; };
+		42AA8E3A1F5471DD009734D4 /* StatsDescription.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = StatsDescription.pdf; sourceTree = "<group>"; };
+		42AA8E3B1F5471DD009734D4 /* table.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = table.css; sourceTree = "<group>"; };
+		42AA8E3E1F5471DD009734D4 /* TennisLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TennisLaunchScreen.xib; sourceTree = "<group>"; };
+		42AA8E451F5471DE009734D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42AA8E6D1F54755F009734D4 /* tennisstats-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "tennisstats-Prefix.pch"; path = "../tennisstats-Prefix.pch"; sourceTree = "<group>"; };
+		42AB66CE16DACF6B00C633BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42AB66D016DACF7600C633BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		42AB66D216DACF8A00C633BD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		42AB66D416DACFC700C633BD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		42AB66D616DACFD500C633BD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		42AB66D816DACFF000C633BD /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		42AB66DA16DAD00400C633BD /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		42AB66DC16DAD01800C633BD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		42AB66DE16DAD02F00C633BD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		42C82A93201FC4A900A23815 /* TSTennisSession+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSTennisSession+Test.m"; sourceTree = "<group>"; };
+		42C82A94201FC4A900A23815 /* TSTestOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTestOrganizer.m; sourceTree = "<group>"; };
+		42C82A95201FC4A900A23815 /* TSTestTennisSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTestTennisSession.m; sourceTree = "<group>"; };
+		42C82A97201FC4AA00A23815 /* session_201411011705.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_201411011705.db; sourceTree = "<group>"; };
+		42C82A98201FC4AA00A23815 /* session_test_large.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_test_large.db; sourceTree = "<group>"; };
+		42C82A99201FC4AA00A23815 /* session_201410122156.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_201410122156.db; sourceTree = "<group>"; };
+		42C82A9A201FC4AA00A23815 /* session_201410180916.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_201410180916.db; sourceTree = "<group>"; };
+		42C82A9B201FC4AA00A23815 /* session_20150117170928.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_20150117170928.db; sourceTree = "<group>"; };
+		42C82A9C201FC4AA00A23815 /* session_201411221859.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_201411221859.db; sourceTree = "<group>"; };
+		42C82A9D201FC4AA00A23815 /* cloud_session_20150708164712.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud_session_20150708164712.db; sourceTree = "<group>"; };
+		42C82A9E201FC4AA00A23815 /* session_20150117100009.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = session_20150117100009.db; sourceTree = "<group>"; };
+		42C82A9F201FC4AA00A23815 /* TSTestDataPivot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTestDataPivot.m; sourceTree = "<group>"; };
+		42C82AA0201FC4AA00A23815 /* TSTestPlayers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTestPlayers.m; sourceTree = "<group>"; };
+		42C82AA1201FC4AA00A23815 /* TSTennisSession+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSTennisSession+Test.h"; sourceTree = "<group>"; };
+		42C82AA2201FC4AA00A23815 /* TSTestSamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTestSamples.h; sourceTree = "<group>"; };
+		42C82ABF201FCF0500A23815 /* TSScoreRuleEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSScoreRuleEditorViewController.swift; sourceTree = "<group>"; };
+		42C82AC0201FCF0500A23815 /* TSScoreRuleEditorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSScoreRuleEditorViewController.xib; sourceTree = "<group>"; };
+		42D037C0168AF48300789E7D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		42D037C2168AF55900789E7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		42DD59E017E60B6E00227A36 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		42DE53BF19CF696E00009130 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		42E186C416A6151A00D4513B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		42E18A3B16AC6B4400D4513B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		42E18A3D16AC6B8F00D4513B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RZExternal.xcodeproj; path = RZExternal/RZExternal.xcodeproj; sourceTree = "<group>"; };
+		42EEAEDF16A2BDDA0058965A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		42F1356E1B8BB2BE006D186A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		59253EE8544D849CAA204771 /* libPods-ConnectStatsTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConnectStatsTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0D145DB4641081A9A59212 /* libPods-ConnectStats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConnectStats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C2C492A62AB7D230603456 /* Pods-tennisstats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tennisstats.release.xcconfig"; path = "Pods/Target Support Files/Pods-tennisstats/Pods-tennisstats.release.xcconfig"; sourceTree = "<group>"; };
+		7DFF7F573F7035C0188F1F4D /* Pods-tennisstats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tennisstats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tennisstats/Pods-tennisstats.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42AA8D5E1F547151009734D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AA8E581F5474AC009734D4 /* RZUtils.framework in Frameworks */,
+				42AA8E591F5474AC009734D4 /* RZUtilsSwift.framework in Frameworks */,
+				42AA8E5A1F5474AC009734D4 /* RZUtilsTouch.framework in Frameworks */,
+				42280D411F5477C000724581 /* CloudKit.framework in Frameworks */,
+				42AA8E5B1F5474AC009734D4 /* RZUtilsUniversal.framework in Frameworks */,
+				59E4EC235662135D543715DF /* libPods-tennisstats.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AA8D751F547151009734D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42306C341F5C5FC400FC7CCB /* XCTest.framework in Frameworks */,
+				42306C321F5C5F7D00FC7CCB /* UIKit.framework in Frameworks */,
+				42306C311F5C5F7500FC7CCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4226B4101F65D353009E1104 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				4226B4191F65D398009E1104 /* TSSessionListTableViewController.swift */,
+			);
+			name = Lists;
+			sourceTree = "<group>";
+		};
+		42306BF01F5C588B00FC7CCB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4226B4181F65D398009E1104 /* tennisstats-Bridging-Header.h */,
+				42AA8D941F5471AB009734D4 /* TSAppDelegate.h */,
+				42AA8D951F5471AB009734D4 /* TSAppDelegate.m */,
+				42AA8D961F5471AB009734D4 /* TSAppGlobal.h */,
+				42AA8D971F5471AB009734D4 /* TSAppGlobal.m */,
+				42AA8D931F5471AB009734D4 /* TSAppConstants.h */,
+				423F541B1F6C716D004471E6 /* GCAppGlobal.h */,
+				423F541C1F6C716D004471E6 /* GCAppGlobal.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		42306BF81F5C590F00FC7CCB /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				42306C121F5C5D3D00FC7CCB /* iPhone */,
+				42306C111F5C5D3600FC7CCB /* iPad */,
+				42306C071F5C5BB900FC7CCB /* Pages */,
+				42306C051F5C5B3A00FC7CCB /* Cells */,
+				42306C041F5C5B3200FC7CCB /* Icons&Config */,
+				42306C031F5C5B2700FC7CCB /* TennisCourt */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		42306BFA1F5C599500FC7CCB /* TennisData */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DE01F5471AB009734D4 /* TSTennisOrganizer.h */,
+				42AA8DE11F5471AB009734D4 /* TSTennisOrganizer.m */,
+				42AA8DD41F5471AB009734D4 /* TSTennisCourtGeometry.h */,
+				42AA8DD51F5471AB009734D4 /* TSTennisCourtGeometry.m */,
+				42306C001F5C5A5800FC7CCB /* Score */,
+				42306BFF1F5C5A3700FC7CCB /* ShotRally */,
+				42306BFE1F5C5A1500FC7CCB /* Session */,
+				42306BFD1F5C59E300FC7CCB /* SessionReport */,
+				42306BFC1F5C59C100FC7CCB /* Events&Fields */,
+				42306BFB1F5C59B000FC7CCB /* Analysis */,
+			);
+			name = TennisData;
+			sourceTree = "<group>";
+		};
+		42306BFB1F5C59B000FC7CCB /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8D8F1F5471AB009734D4 /* TSAnalysis.h */,
+				42AA8D901F5471AB009734D4 /* TSAnalysis.m */,
+				42AA8D911F5471AB009734D4 /* TSAnalysisTracker.h */,
+				42AA8D921F5471AB009734D4 /* TSAnalysisTracker.m */,
+			);
+			name = Analysis;
+			sourceTree = "<group>";
+		};
+		42306BFC1F5C59C100FC7CCB /* Events&Fields */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DCF1F5471AB009734D4 /* TSTennis.h */,
+				42AA8DDA1F5471AB009734D4 /* TSTennisEvent.h */,
+				42AA8DDB1F5471AB009734D4 /* TSTennisEvent.m */,
+				42AA8DDC1F5471AB009734D4 /* TSTennisFields.h */,
+				42AA8DDD1F5471AB009734D4 /* TSTennisFields.m */,
+			);
+			name = "Events&Fields";
+			sourceTree = "<group>";
+		};
+		42306BFD1F5C59E300FC7CCB /* SessionReport */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DB71F5471AB009734D4 /* TSReportOrganizer.h */,
+				42AA8DB81F5471AB009734D4 /* TSReportOrganizer.m */,
+				42AA8DC31F5471AB009734D4 /* TSSessionReport.h */,
+				42AA8DC41F5471AB009734D4 /* TSSessionReport.m */,
+				42AA8DC51F5471AB009734D4 /* TSSessionReportPivot.h */,
+				42AA8DC61F5471AB009734D4 /* TSSessionReportPivot.m */,
+			);
+			name = SessionReport;
+			sourceTree = "<group>";
+		};
+		42306BFE1F5C5A1500FC7CCB /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DF21F5471AB009734D4 /* TSTennisSession.h */,
+				42AA8DF31F5471AB009734D4 /* TSTennisSession.m */,
+				42AA8DF61F5471AB009734D4 /* TSTennisSessionState.h */,
+				42AA8DF71F5471AB009734D4 /* TSTennisSessionState.m */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		42306BFF1F5C5A3700FC7CCB /* ShotRally */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DE21F5471AB009734D4 /* TSTennisRally.h */,
+				42AA8DE31F5471AB009734D4 /* TSTennisRally.m */,
+				42AA8DF81F5471AB009734D4 /* TSTennisShot.h */,
+				42AA8DF91F5471AB009734D4 /* TSTennisShot.m */,
+			);
+			name = ShotRally;
+			sourceTree = "<group>";
+		};
+		42306C001F5C5A5800FC7CCB /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DE61F5471AB009734D4 /* TSTennisResult.h */,
+				42AA8DE71F5471AB009734D4 /* TSTennisResult.m */,
+				42AA8DE81F5471AB009734D4 /* TSTennisResultSet.h */,
+				42AA8DE91F5471AB009734D4 /* TSTennisResultSet.m */,
+				42AA8DEA1F5471AB009734D4 /* TSTennisScore.h */,
+				42AA8DEB1F5471AB009734D4 /* TSTennisScore.m */,
+				42AA8DEE1F5471AB009734D4 /* TSTennisScoreRule.h */,
+				42AA8DEF1F5471AB009734D4 /* TSTennisScoreRule.m */,
+			);
+			name = Score;
+			sourceTree = "<group>";
+		};
+		42306C011F5C5ACE00FC7CCB /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8D8D1F5471AB009734D4 /* CKRecord+TennisSession.h */,
+				42AA8D8E1F5471AB009734D4 /* CKRecord+TennisSession.m */,
+				42AA8D981F5471AB009734D4 /* TSCloudOrganizer.h */,
+				42AA8D991F5471AB009734D4 /* TSCloudOrganizer.m */,
+				42AA8D9C1F5471AB009734D4 /* TSCloudTypes.h */,
+				42AA8D9D1F5471AB009734D4 /* TSCloudTypes.m */,
+			);
+			name = Cloud;
+			sourceTree = "<group>";
+		};
+		42306C021F5C5B0100FC7CCB /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DAF1F5471AB009734D4 /* TSReport.h */,
+				42AA8DB01F5471AB009734D4 /* TSReport.m */,
+				42AA8DB11F5471AB009734D4 /* TSReportElement.h */,
+				42AA8DB21F5471AB009734D4 /* TSReportElement.m */,
+				42AA8DB31F5471AB009734D4 /* TSReportElementPivot.h */,
+				42AA8DB41F5471AB009734D4 /* TSReportElementPivot.m */,
+			);
+			name = Reports;
+			sourceTree = "<group>";
+		};
+		42306C031F5C5B2700FC7CCB /* TennisCourt */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8D9E1F5471AB009734D4 /* TSCourtReportAnnotationView.h */,
+				42AA8D9F1F5471AB009734D4 /* TSCourtReportAnnotationView.m */,
+				42AA8DD01F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.h */,
+				42AA8DD11F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.m */,
+				42AA8DD21F5471AB009734D4 /* TSTennisCourtAnnotationView.h */,
+				42AA8DD31F5471AB009734D4 /* TSTennisCourtAnnotationView.m */,
+				42AA8DD61F5471AB009734D4 /* TSTennisCourtView.h */,
+				42AA8DD71F5471AB009734D4 /* TSTennisCourtView.m */,
+			);
+			name = TennisCourt;
+			sourceTree = "<group>";
+		};
+		42306C041F5C5B3200FC7CCB /* Icons&Config */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DCD1F5471AB009734D4 /* TSTagIcons.h */,
+				42AA8DCE1F5471AB009734D4 /* TSTagIcons.m */,
+				42AA8DDE1F5471AB009734D4 /* TSTennisIcons.h */,
+				42AA8DDF1F5471AB009734D4 /* TSTennisIcons.m */,
+			);
+			name = "Icons&Config";
+			sourceTree = "<group>";
+		};
+		42306C051F5C5B3A00FC7CCB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DA41F5471AB009734D4 /* TSPlayer+Cells.h */,
+				42AA8DA51F5471AB009734D4 /* TSPlayer+Cells.m */,
+				42AA8DF01F5471AB009734D4 /* TSTennisSession+Cells.h */,
+				42AA8DF11F5471AB009734D4 /* TSTennisSession+Cells.m */,
+				42AA8DF41F5471AB009734D4 /* TSTennisSessionState+Cells.h */,
+				42AA8DF51F5471AB009734D4 /* TSTennisSessionState+Cells.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		42306C071F5C5BB900FC7CCB /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				4226B4101F65D353009E1104 /* Lists */,
+				42306C131F5C5D6400FC7CCB /* Cloud */,
+				42306C101F5C5D1300FC7CCB /* Reports */,
+				42306C0C1F5C5C6500FC7CCB /* Sessions */,
+				42306C0B1F5C5C3C00FC7CCB /* CourtReport */,
+				42306C0A1F5C5C0200FC7CCB /* Record */,
+				42306C091F5C5BEC00FC7CCB /* Plots */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		42306C081F5C5BD100FC7CCB /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DA61F5471AB009734D4 /* TSPlayer.h */,
+				42AA8DA71F5471AB009734D4 /* TSPlayer.m */,
+				42AA8DAB1F5471AB009734D4 /* TSPlayerManager.h */,
+				42AA8DAC1F5471AB009734D4 /* TSPlayerManager.m */,
+			);
+			name = Players;
+			sourceTree = "<group>";
+		};
+		42306C091F5C5BEC00FC7CCB /* Plots */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DAD1F5471AB009734D4 /* TSPlotAnalysisTableViewController.h */,
+				42AA8DAE1F5471AB009734D4 /* TSPlotAnalysisTableViewController.m */,
+			);
+			name = Plots;
+			sourceTree = "<group>";
+		};
+		42306C0A1F5C5C0200FC7CCB /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DD81F5471AB009734D4 /* TSTennisCourtViewController.h */,
+				42AA8DD91F5471AB009734D4 /* TSTennisCourtViewController.m */,
+				42AA8DE41F5471AB009734D4 /* TSTennisRallyResultView.h */,
+				42AA8DE51F5471AB009734D4 /* TSTennisRallyResultView.m */,
+				42AA8DEC1F5471AB009734D4 /* TSTennisScorePanelView.h */,
+				42AA8DED1F5471AB009734D4 /* TSTennisScorePanelView.m */,
+				42AA8DFA1F5471AB009734D4 /* TSTennisTagSelectionView.h */,
+				42AA8DFB1F5471AB009734D4 /* TSTennisTagSelectionView.m */,
+			);
+			name = Record;
+			sourceTree = "<group>";
+		};
+		42306C0B1F5C5C3C00FC7CCB /* CourtReport */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DA01F5471AB009734D4 /* TSCourtReportConfigTableViewController.h */,
+				42AA8DA11F5471AB009734D4 /* TSCourtReportConfigTableViewController.m */,
+				42AA8DA21F5471AB009734D4 /* TSCourtReportViewController.h */,
+				42AA8DA31F5471AB009734D4 /* TSCourtReportViewController.m */,
+			);
+			name = CourtReport;
+			sourceTree = "<group>";
+		};
+		42306C0C1F5C5C6500FC7CCB /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				42306C0F1F5C5CCC00FC7CCB /* ResultEditor */,
+				42306C0E1F5C5CB100FC7CCB /* ScoreRuleEditor */,
+				42306C0D1F5C5C8600FC7CCB /* Players */,
+				42AA8DBF1F5471AB009734D4 /* TSSessionEditTableViewController.h */,
+				42AA8DC01F5471AB009734D4 /* TSSessionEditTableViewController.m */,
+				42AA8DC11F5471AB009734D4 /* TSSessionListViewController.h */,
+				42AA8DC21F5471AB009734D4 /* TSSessionListViewController.m */,
+				42AA8DC71F5471AB009734D4 /* TSSessionSetupTableViewController.h */,
+				42AA8DC81F5471AB009734D4 /* TSSessionSetupTableViewController.m */,
+			);
+			name = Sessions;
+			sourceTree = "<group>";
+		};
+		42306C0D1F5C5C8600FC7CCB /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DA81F5471AB009734D4 /* TSPlayerEditViewController.h */,
+				42AA8DA91F5471AB009734D4 /* TSPlayerEditViewController.m */,
+				42AA8DAA1F5471AB009734D4 /* TSPlayerEditViewController.xib */,
+			);
+			name = Players;
+			sourceTree = "<group>";
+		};
+		42306C0E1F5C5CB100FC7CCB /* ScoreRuleEditor */ = {
+			isa = PBXGroup;
+			children = (
+				42C82ABF201FCF0500A23815 /* TSScoreRuleEditorViewController.swift */,
+				42C82AC0201FCF0500A23815 /* TSScoreRuleEditorViewController.xib */,
+			);
+			name = ScoreRuleEditor;
+			sourceTree = "<group>";
+		};
+		42306C0F1F5C5CCC00FC7CCB /* ResultEditor */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DBB1F5471AB009734D4 /* TSResultEditViewController.h */,
+				42AA8DBC1F5471AB009734D4 /* TSResultEditViewController.m */,
+				42AA8DB91F5471AB009734D4 /* TSResultEditOneRow.h */,
+				42AA8DBA1F5471AB009734D4 /* TSResultEditOneRow.m */,
+			);
+			name = ResultEditor;
+			sourceTree = "<group>";
+		};
+		42306C101F5C5D1300FC7CCB /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DB51F5471AB009734D4 /* TSReportListTableViewController.h */,
+				42AA8DB61F5471AB009734D4 /* TSReportListTableViewController.m */,
+				42AA8DFC1F5471AB009734D4 /* TSWebReportViewController.h */,
+				42AA8DFD1F5471AB009734D4 /* TSWebReportViewController.m */,
+			);
+			name = Reports;
+			sourceTree = "<group>";
+		};
+		42306C111F5C5D3600FC7CCB /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DC91F5471AB009734D4 /* TSSplitViewController.h */,
+				42AA8DCA1F5471AB009734D4 /* TSSplitViewController.m */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		42306C121F5C5D3D00FC7CCB /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8DCB1F5471AB009734D4 /* TSTabBarViewController.h */,
+				42AA8DCC1F5471AB009734D4 /* TSTabBarViewController.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		42306C131F5C5D6400FC7CCB /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8D9A1F5471AB009734D4 /* TSCloudSessionListTableViewController.h */,
+				42AA8D9B1F5471AB009734D4 /* TSCloudSessionListTableViewController.m */,
+			);
+			name = Cloud;
+			sourceTree = "<group>";
+		};
+		423D5C211D27F1C20068D9CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				423D5C281D27F1C20068D9CE /* RZUtils.framework */,
+				423D5C2A1D27F1C20068D9CE /* RZUtilsTests.xctest */,
+				425872BF1EACA089000D4115 /* RZUtilsSwift.framework */,
+				425872C11EACA089000D4115 /* RZUtilsSwiftTests.xctest */,
+				42F3FBF51DD79D910042A9B1 /* RZUtilsUniversal.framework */,
+				42F3FBF71DD79D910042A9B1 /* RZUtilsUniversalTests.xctest */,
+				425872C31EACA089000D4115 /* RZUtilsHealthkit.framework */,
+				425872C51EACA089000D4115 /* RZUtilsHealthkitTests.xctest */,
+				42BF1FE91D3AC233004445C2 /* RZUtilsTouch.framework */,
+				42BF1FEB1D3AC233004445C2 /* RZUtilsTouchTests.xctest */,
+				423D5C2C1D27F1C20068D9CE /* RZUtilsOSX.framework */,
+				423D5C2E1D27F1C20068D9CE /* RZUtilsOSXTests.xctest */,
+				428BE87F20013DF600E14A61 /* RZUtilsTestInfra.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4249685E2218886C00776D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424968662218886C00776D68 /* RZFitFile.framework */,
+				424968682218886C00776D68 /* RZFitFileTests.xctest */,
+				4249686A2218886C00776D68 /* fitios.app */,
+				4249686C2218886C00776D68 /* fitmacos.app */,
+				4249686E2218886C00776D68 /* fitparse */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428FF6FE15F36888007A88FA = {
+			isa = PBXGroup;
+			children = (
+				4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */,
+				42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */,
+				423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */,
+				42D8AF0E1B24CE9300ADDD31 /* Tests */,
+				42AA8D621F547151009734D4 /* TennisStats */,
+				428FF70C15F36888007A88FA /* Frameworks */,
+				428FF70A15F36888007A88FA /* Products */,
+				DDB2BED70E3EC1E6D15FAD8A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		428FF70A15F36888007A88FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8D611F547151009734D4 /* tennisstats.app */,
+				42AA8D781F547151009734D4 /* tennisstatsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428FF70C15F36888007A88FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42306C331F5C5FC400FC7CCB /* XCTest.framework */,
+				42280D401F5477C000724581 /* CloudKit.framework */,
+				42F1356E1B8BB2BE006D186A /* libsqlite3.tbd */,
+				42DE53BF19CF696E00009130 /* HealthKit.framework */,
+				42200E9C17EEF0EC0078B45A /* StoreKit.framework */,
+				42DD59E017E60B6E00227A36 /* libc++.dylib */,
+				42AB66DE16DAD02F00C633BD /* OpenGLES.framework */,
+				42AB66DC16DAD01800C633BD /* libz.dylib */,
+				42AB66DA16DAD00400C633BD /* libstdc++.dylib */,
+				42AB66D816DACFF000C633BD /* libicucore.dylib */,
+				42AB66D616DACFD500C633BD /* ImageIO.framework */,
+				42AB66D416DACFC700C633BD /* GLKit.framework */,
+				42AB66D216DACF8A00C633BD /* CoreText.framework */,
+				42AB66D016DACF7600C633BD /* AVFoundation.framework */,
+				42AB66CE16DACF6B00C633BD /* CoreData.framework */,
+				424B7F2916CB049A000B38AD /* Security.framework */,
+				42E18A3B16AC6B4400D4513B /* AdSupport.framework */,
+				42E18A3D16AC6B8F00D4513B /* Accounts.framework */,
+				42E186C416A6151A00D4513B /* MessageUI.framework */,
+				42EEAEDF16A2BDDA0058965A /* Social.framework */,
+				42D037C2168AF55900789E7D /* SystemConfiguration.framework */,
+				42D037C0168AF48300789E7D /* CFNetwork.framework */,
+				42A66BDA160D0A0800DA29A5 /* QuartzCore.framework */,
+				423494441609276B00A770D6 /* MapKit.framework */,
+				423494421609275E00A770D6 /* CoreLocation.framework */,
+				428FF70D15F36888007A88FA /* UIKit.framework */,
+				428FF70F15F36888007A88FA /* Foundation.framework */,
+				428FF71115F36888007A88FA /* CoreGraphics.framework */,
+				6F0D145DB4641081A9A59212 /* libPods-ConnectStats.a */,
+				1FDCC27AED29AB0F64BE174E /* libPods-HealthStats.a */,
+				59253EE8544D849CAA204771 /* libPods-ConnectStatsTestApp.a */,
+				3665CA8D2236812ED0C4EBE1 /* libPods-tennisstats.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42AA8D621F547151009734D4 /* TennisStats */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8E361F5471DD009734D4 /* html */,
+				42AA8E3C1F5471DD009734D4 /* icons */,
+				42AA8D8C1F5471AB009734D4 /* src */,
+				42AA8D711F547151009734D4 /* Info.plist */,
+				42AA8D721F547151009734D4 /* main.m */,
+			);
+			path = TennisStats;
+			sourceTree = "<group>";
+		};
+		42AA8D7B1F547151009734D4 /* TennisStatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				42C82A96201FC4AA00A23815 /* samples */,
+				42C82AA1201FC4AA00A23815 /* TSTennisSession+Test.h */,
+				42C82A93201FC4A900A23815 /* TSTennisSession+Test.m */,
+				42C82A9F201FC4AA00A23815 /* TSTestDataPivot.m */,
+				42C82A94201FC4A900A23815 /* TSTestOrganizer.m */,
+				42C82AA0201FC4AA00A23815 /* TSTestPlayers.m */,
+				42C82AA2201FC4AA00A23815 /* TSTestSamples.h */,
+				42C82A95201FC4A900A23815 /* TSTestTennisSession.m */,
+				42AA8D7E1F547151009734D4 /* Info.plist */,
+			);
+			path = TennisStatsTests;
+			sourceTree = "<group>";
+		};
+		42AA8D8C1F5471AB009734D4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				42306C081F5C5BD100FC7CCB /* Players */,
+				42306C021F5C5B0100FC7CCB /* Reports */,
+				42306C011F5C5ACE00FC7CCB /* Cloud */,
+				42306BFA1F5C599500FC7CCB /* TennisData */,
+				42306BF81F5C590F00FC7CCB /* UserInterface */,
+				42306BF01F5C588B00FC7CCB /* AppDelegate */,
+				42AA8E6D1F54755F009734D4 /* tennisstats-Prefix.pch */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		42AA8E361F5471DD009734D4 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8E371F5471DD009734D4 /* reportbody.html */,
+				42AA8E381F5471DD009734D4 /* reportfooter.html */,
+				42AA8E391F5471DD009734D4 /* reportheader.html */,
+				42AA8E3A1F5471DD009734D4 /* StatsDescription.pdf */,
+				42AA8E3B1F5471DD009734D4 /* table.css */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		42AA8E3C1F5471DD009734D4 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8E451F5471DE009734D4 /* Images.xcassets */,
+				42AA8E3E1F5471DD009734D4 /* TennisLaunchScreen.xib */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		42C82A96201FC4AA00A23815 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				42C82A97201FC4AA00A23815 /* session_201411011705.db */,
+				42C82A98201FC4AA00A23815 /* session_test_large.db */,
+				42C82A99201FC4AA00A23815 /* session_201410122156.db */,
+				42C82A9A201FC4AA00A23815 /* session_201410180916.db */,
+				42C82A9B201FC4AA00A23815 /* session_20150117170928.db */,
+				42C82A9C201FC4AA00A23815 /* session_201411221859.db */,
+				42C82A9D201FC4AA00A23815 /* cloud_session_20150708164712.db */,
+				42C82A9E201FC4AA00A23815 /* session_20150117100009.db */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		42D8AF0E1B24CE9300ADDD31 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				42AA8D7B1F547151009734D4 /* TennisStatsTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		42EBBEDB1FFAB5400009B385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EBBEDF1FFAB5400009B385 /* RZExternal.framework */,
+				42EBC0311FFAE1000009B385 /* RZExternalTestUtils.framework */,
+				42A0098620012B5B00019CB3 /* RZExternalCpp.framework */,
+				42C82A8C201FBEDD00A23815 /* RZExternalUniversal.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDB2BED70E3EC1E6D15FAD8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DFF7F573F7035C0188F1F4D /* Pods-tennisstats.debug.xcconfig */,
+				70C2C492A62AB7D230603456 /* Pods-tennisstats.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AA8D601F547151009734D4 /* tennisstats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AA8D8A1F547151009734D4 /* Build configuration list for PBXNativeTarget "tennisstats" */;
+			buildPhases = (
+				F0D580869C1B3E6E21BB2510 /* [CP] Check Pods Manifest.lock */,
+				42AA8D5D1F547151009734D4 /* Sources */,
+				42AA8D5E1F547151009734D4 /* Frameworks */,
+				42AA8D5F1F547151009734D4 /* Resources */,
+				42AA8E6C1F5474BF009734D4 /* Embed Frameworks */,
+				B7BAFECA8031155CF46E3ECF /* [CP] Embed Pods Frameworks */,
+				46A84B0B18F192A64448010A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42AA8E5F1F5474BF009734D4 /* PBXTargetDependency */,
+				42AA8E631F5474BF009734D4 /* PBXTargetDependency */,
+				42AA8E671F5474BF009734D4 /* PBXTargetDependency */,
+				42AA8E6B1F5474BF009734D4 /* PBXTargetDependency */,
+			);
+			name = tennisstats;
+			productName = tennisstats;
+			productReference = 42AA8D611F547151009734D4 /* tennisstats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42AA8D771F547151009734D4 /* tennisstatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AA8D8B1F547151009734D4 /* Build configuration list for PBXNativeTarget "tennisstatsTests" */;
+			buildPhases = (
+				42AA8D741F547151009734D4 /* Sources */,
+				42AA8D751F547151009734D4 /* Frameworks */,
+				42AA8D761F547151009734D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42AA8D7A1F547151009734D4 /* PBXTargetDependency */,
+			);
+			name = tennisstatsTests;
+			productName = tennisstatsTests;
+			productReference = 42AA8D781F547151009734D4 /* tennisstatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428FF70015F36888007A88FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GC;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Brice Rosenzweig";
+				TargetAttributes = {
+					42AA8D601F547151009734D4 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					42AA8D771F547151009734D4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42AA8D601F547151009734D4;
+					};
+				};
+			};
+			buildConfigurationList = 428FF70315F36888007A88FA /* Build configuration list for PBXProject "TennisStats" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				ca,
+				cs,
+				da,
+				de,
+				es,
+				fi,
+				he,
+				hu,
+				it,
+				ja,
+				ko,
+				nb,
+				nl,
+				pl,
+				pt,
+				ru,
+				sk,
+				sv,
+				"zh-Hans",
+				"zh-Hant",
+				Base,
+			);
+			mainGroup = 428FF6FE15F36888007A88FA;
+			productRefGroup = 428FF70A15F36888007A88FA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4249685E2218886C00776D68 /* Products */;
+					ProjectRef = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
+				},
+				{
+					ProductGroup = 42EBBEDB1FFAB5400009B385 /* Products */;
+					ProjectRef = 42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */;
+				},
+				{
+					ProductGroup = 423D5C211D27F1C20068D9CE /* Products */;
+					ProjectRef = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				42AA8D601F547151009734D4 /* tennisstats */,
+				42AA8D771F547151009734D4 /* tennisstatsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		423D5C281D27F1C20068D9CE /* RZUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtils.framework;
+			remoteRef = 423D5C271D27F1C20068D9CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		423D5C2A1D27F1C20068D9CE /* RZUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsTests.xctest;
+			remoteRef = 423D5C291D27F1C20068D9CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		423D5C2C1D27F1C20068D9CE /* RZUtilsOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsOSX.framework;
+			remoteRef = 423D5C2B1D27F1C20068D9CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		423D5C2E1D27F1C20068D9CE /* RZUtilsOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsOSXTests.xctest;
+			remoteRef = 423D5C2D1D27F1C20068D9CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		424968662218886C00776D68 /* RZFitFile.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZFitFile.framework;
+			remoteRef = 424968652218886C00776D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		424968682218886C00776D68 /* RZFitFileTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZFitFileTests.xctest;
+			remoteRef = 424968672218886C00776D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4249686A2218886C00776D68 /* fitios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = fitios.app;
+			remoteRef = 424968692218886C00776D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4249686C2218886C00776D68 /* fitmacos.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = fitmacos.app;
+			remoteRef = 4249686B2218886C00776D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4249686E2218886C00776D68 /* fitparse */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fitparse;
+			remoteRef = 4249686D2218886C00776D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		425872BF1EACA089000D4115 /* RZUtilsSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsSwift.framework;
+			remoteRef = 425872BE1EACA089000D4115 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		425872C11EACA089000D4115 /* RZUtilsSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsSwiftTests.xctest;
+			remoteRef = 425872C01EACA089000D4115 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		425872C31EACA089000D4115 /* RZUtilsHealthkit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsHealthkit.framework;
+			remoteRef = 425872C21EACA089000D4115 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		425872C51EACA089000D4115 /* RZUtilsHealthkitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsHealthkitTests.xctest;
+			remoteRef = 425872C41EACA089000D4115 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		428BE87F20013DF600E14A61 /* RZUtilsTestInfra.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsTestInfra.framework;
+			remoteRef = 428BE87E20013DF600E14A61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42A0098620012B5B00019CB3 /* RZExternalCpp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZExternalCpp.framework;
+			remoteRef = 42A0098520012B5B00019CB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42BF1FE91D3AC233004445C2 /* RZUtilsTouch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsTouch.framework;
+			remoteRef = 42BF1FE81D3AC233004445C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42BF1FEB1D3AC233004445C2 /* RZUtilsTouchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsTouchTests.xctest;
+			remoteRef = 42BF1FEA1D3AC233004445C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42C82A8C201FBEDD00A23815 /* RZExternalUniversal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZExternalUniversal.framework;
+			remoteRef = 42C82A8B201FBEDD00A23815 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42EBBEDF1FFAB5400009B385 /* RZExternal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZExternal.framework;
+			remoteRef = 42EBBEDE1FFAB5400009B385 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42EBC0311FFAE1000009B385 /* RZExternalTestUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZExternalTestUtils.framework;
+			remoteRef = 42EBC0301FFAE1000009B385 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42F3FBF51DD79D910042A9B1 /* RZUtilsUniversal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsUniversal.framework;
+			remoteRef = 42F3FBF41DD79D910042A9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42F3FBF71DD79D910042A9B1 /* RZUtilsUniversalTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsUniversalTests.xctest;
+			remoteRef = 42F3FBF61DD79D910042A9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42AA8D5F1F547151009734D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AA8E461F5471DE009734D4 /* reportbody.html in Resources */,
+				42C82AC2201FCF0500A23815 /* TSScoreRuleEditorViewController.xib in Resources */,
+				42AA8E491F5471DE009734D4 /* StatsDescription.pdf in Resources */,
+				42AA8E4A1F5471DE009734D4 /* table.css in Resources */,
+				42AA8E481F5471DE009734D4 /* reportheader.html in Resources */,
+				42AA8E0C1F5471AB009734D4 /* TSPlayerEditViewController.xib in Resources */,
+				42AA8E531F5471DE009734D4 /* Images.xcassets in Resources */,
+				42AA8E4C1F5471DE009734D4 /* TennisLaunchScreen.xib in Resources */,
+				42AA8E471F5471DE009734D4 /* reportfooter.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AA8D761F547151009734D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C82ABA201FC4CE00A23815 /* session_201411221859.db in Resources */,
+				42C82AB6201FC4CE00A23815 /* session_test_large.db in Resources */,
+				42C82AB7201FC4CE00A23815 /* session_201410122156.db in Resources */,
+				42C82ABC201FC4CE00A23815 /* session_20150117100009.db in Resources */,
+				42C82AB5201FC4CE00A23815 /* session_201411011705.db in Resources */,
+				42C82AB9201FC4CE00A23815 /* session_20150117170928.db in Resources */,
+				42C82AB8201FC4CE00A23815 /* session_201410180916.db in Resources */,
+				42C82ABB201FC4CE00A23815 /* cloud_session_20150708164712.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46A84B0B18F192A64448010A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tennisstats/Pods-tennisstats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7BAFECA8031155CF46E3ECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tennisstats/Pods-tennisstats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D580869C1B3E6E21BB2510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tennisstats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42AA8D5D1F547151009734D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AA8E111F5471AB009734D4 /* TSReportElementPivot.m in Sources */,
+				42AA8E2B1F5471AB009734D4 /* TSTennisResultSet.m in Sources */,
+				42AA8E091F5471AB009734D4 /* TSPlayer+Cells.m in Sources */,
+				42AA8E0A1F5471AB009734D4 /* TSPlayer.m in Sources */,
+				42AA8E0E1F5471AB009734D4 /* TSPlotAnalysisTableViewController.m in Sources */,
+				42AA8E1D1F5471AB009734D4 /* TSTabBarViewController.m in Sources */,
+				42AA8E011F5471AB009734D4 /* TSAppDelegate.m in Sources */,
+				42AA8E051F5471AB009734D4 /* TSCloudTypes.m in Sources */,
+				42AA8E1B1F5471AB009734D4 /* TSSessionSetupTableViewController.m in Sources */,
+				42AA8E311F5471AB009734D4 /* TSTennisSessionState+Cells.m in Sources */,
+				42AA8E1C1F5471AB009734D4 /* TSSplitViewController.m in Sources */,
+				42AA8E191F5471AB009734D4 /* TSSessionReport.m in Sources */,
+				42AA8E211F5471AB009734D4 /* TSTennisCourtGeometry.m in Sources */,
+				42AA8E351F5471AB009734D4 /* TSWebReportViewController.m in Sources */,
+				42AA8E031F5471AB009734D4 /* TSCloudOrganizer.m in Sources */,
+				42AA8E081F5471AB009734D4 /* TSCourtReportViewController.m in Sources */,
+				42AA8E0B1F5471AB009734D4 /* TSPlayerEditViewController.m in Sources */,
+				42AA8E021F5471AB009734D4 /* TSAppGlobal.m in Sources */,
+				423F541D1F6C716D004471E6 /* GCAppGlobal.m in Sources */,
+				42AA8DFE1F5471AB009734D4 /* CKRecord+TennisSession.m in Sources */,
+				42AA8E2F1F5471AB009734D4 /* TSTennisSession+Cells.m in Sources */,
+				42AA8E2D1F5471AB009734D4 /* TSTennisScorePanelView.m in Sources */,
+				42AA8E001F5471AB009734D4 /* TSAnalysisTracker.m in Sources */,
+				42AA8E251F5471AB009734D4 /* TSTennisFields.m in Sources */,
+				4226B41A1F65D398009E1104 /* TSSessionListTableViewController.swift in Sources */,
+				42AA8E261F5471AB009734D4 /* TSTennisIcons.m in Sources */,
+				42AA8E141F5471AB009734D4 /* TSResultEditOneRow.m in Sources */,
+				42AA8E281F5471AB009734D4 /* TSTennisRally.m in Sources */,
+				42AA8E271F5471AB009734D4 /* TSTennisOrganizer.m in Sources */,
+				42AA8E201F5471AB009734D4 /* TSTennisCourtAnnotationView.m in Sources */,
+				42AA8E181F5471AB009734D4 /* TSSessionListViewController.m in Sources */,
+				42AA8E2A1F5471AB009734D4 /* TSTennisResult.m in Sources */,
+				42AA8E131F5471AB009734D4 /* TSReportOrganizer.m in Sources */,
+				42C82AC1201FCF0500A23815 /* TSScoreRuleEditorViewController.swift in Sources */,
+				42AA8E231F5471AB009734D4 /* TSTennisCourtViewController.m in Sources */,
+				42AA8E171F5471AB009734D4 /* TSSessionEditTableViewController.m in Sources */,
+				42AA8E2C1F5471AB009734D4 /* TSTennisScore.m in Sources */,
+				42AA8E2E1F5471AB009734D4 /* TSTennisScoreRule.m in Sources */,
+				42AA8E061F5471AB009734D4 /* TSCourtReportAnnotationView.m in Sources */,
+				42AA8E0F1F5471AB009734D4 /* TSReport.m in Sources */,
+				42AA8E0D1F5471AB009734D4 /* TSPlayerManager.m in Sources */,
+				42AA8E301F5471AB009734D4 /* TSTennisSession.m in Sources */,
+				42AA8E331F5471AB009734D4 /* TSTennisShot.m in Sources */,
+				42AA8E1E1F5471AB009734D4 /* TSTagIcons.m in Sources */,
+				42AA8E321F5471AB009734D4 /* TSTennisSessionState.m in Sources */,
+				42AA8E1A1F5471AB009734D4 /* TSSessionReportPivot.m in Sources */,
+				42AA8E121F5471AB009734D4 /* TSReportListTableViewController.m in Sources */,
+				42AA8E341F5471AB009734D4 /* TSTennisTagSelectionView.m in Sources */,
+				42AA8E151F5471AB009734D4 /* TSResultEditViewController.m in Sources */,
+				42AA8E101F5471AB009734D4 /* TSReportElement.m in Sources */,
+				42AA8D731F547151009734D4 /* main.m in Sources */,
+				42AA8E241F5471AB009734D4 /* TSTennisEvent.m in Sources */,
+				42AA8E291F5471AB009734D4 /* TSTennisRallyResultView.m in Sources */,
+				42AA8E1F1F5471AB009734D4 /* TSTennisCourtAnnotatedLocation.m in Sources */,
+				42AA8E221F5471AB009734D4 /* TSTennisCourtView.m in Sources */,
+				42AA8DFF1F5471AB009734D4 /* TSAnalysis.m in Sources */,
+				42AA8E071F5471AB009734D4 /* TSCourtReportConfigTableViewController.m in Sources */,
+				42AA8E041F5471AB009734D4 /* TSCloudSessionListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AA8D741F547151009734D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C82AB0201FC4C600A23815 /* TSTennisSession+Test.m in Sources */,
+				42C82AB3201FC4C600A23815 /* TSTestPlayers.m in Sources */,
+				42C82AB1201FC4C600A23815 /* TSTestDataPivot.m in Sources */,
+				42C82AB2201FC4C600A23815 /* TSTestOrganizer.m in Sources */,
+				42C82AB4201FC4C600A23815 /* TSTestTennisSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42AA8D7A1F547151009734D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42AA8D601F547151009734D4 /* tennisstats */;
+			targetProxy = 42AA8D791F547151009734D4 /* PBXContainerItemProxy */;
+		};
+		42AA8E5F1F5474BF009734D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZUtils;
+			targetProxy = 42AA8E5E1F5474BF009734D4 /* PBXContainerItemProxy */;
+		};
+		42AA8E631F5474BF009734D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZUtilsSwift;
+			targetProxy = 42AA8E621F5474BF009734D4 /* PBXContainerItemProxy */;
+		};
+		42AA8E671F5474BF009734D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZUtilsUniversal;
+			targetProxy = 42AA8E661F5474BF009734D4 /* PBXContainerItemProxy */;
+		};
+		42AA8E6B1F5474BF009734D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZUtilsTouch;
+			targetProxy = 42AA8E6A1F5474BF009734D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		428FF73415F36888007A88FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		428FF73515F36888007A88FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Brice Rosenzweig";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Brice Rosenzweig";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "14B235DF-EF8A-4F34-BF15-4452D1620A7C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14B235DF-EF8A-4F34-BF15-4452D1620A7C";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		42AA8D7F1F547151009734D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFF7F573F7035C0188F1F4D /* Pods-tennisstats.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = tennisstats/tennisstats.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M7QSSF3624;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TennisStats/tennisstats-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = tennisstats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.tennisstats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TennisStats/src/tennisstats-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42AA8D801F547151009734D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C2C492A62AB7D230603456 /* Pods-tennisstats.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = tennisstats/tennisstats.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M7QSSF3624;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TennisStats/tennisstats-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = tennisstats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.tennisstats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TennisStats/src/tennisstats-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42AA8D811F547151009734D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M7QSSF3624;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = tennisstatsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.tennisstatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tennisstats.app/tennisstats";
+			};
+			name = Debug;
+		};
+		42AA8D821F547151009734D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M7QSSF3624;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = tennisstatsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.tennisstatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tennisstats.app/tennisstats";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428FF70315F36888007A88FA /* Build configuration list for PBXProject "TennisStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428FF73415F36888007A88FA /* Debug */,
+				428FF73515F36888007A88FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AA8D8A1F547151009734D4 /* Build configuration list for PBXNativeTarget "tennisstats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AA8D7F1F547151009734D4 /* Debug */,
+				42AA8D801F547151009734D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AA8D8B1F547151009734D4 /* Build configuration list for PBXNativeTarget "tennisstatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AA8D811F547151009734D4 /* Debug */,
+				42AA8D821F547151009734D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428FF70015F36888007A88FA /* Project object */;
+}
