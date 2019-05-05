@@ -131,41 +131,6 @@
 			remoteGlobalIDString = 4288E4EC1A33101F0079890C;
 			remoteInfo = RZUtilsOSXTests;
 		};
-		424968652218886C00776D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 422C59312211E43C004AC730;
-			remoteInfo = RZFitFile;
-		};
-		424968672218886C00776D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 422C59392211E43C004AC730;
-			remoteInfo = RZFitFileTests;
-		};
-		424968692218886C00776D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 422C59632211EC48004AC730;
-			remoteInfo = fitios;
-		};
-		4249686B2218886C00776D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4249682322187F7E00776D68;
-			remoteInfo = fitmacos;
-		};
-		4249686D2218886C00776D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 42584E5B21CBF57900B7E021;
-			remoteInfo = fitparse;
-		};
 		425872BE1EACA089000D4115 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */;
@@ -324,7 +289,6 @@
 		423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RZUtils.xcodeproj; path = RZUtils/RZUtils.xcodeproj; sourceTree = "<group>"; };
 		423F541B1F6C716D004471E6 /* GCAppGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppGlobal.h; sourceTree = "<group>"; };
 		423F541C1F6C716D004471E6 /* GCAppGlobal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppGlobal.m; sourceTree = "<group>"; };
-		4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fit-sdk-swift.xcodeproj"; path = "fit-sdk-swift/fit-sdk-swift.xcodeproj"; sourceTree = "<group>"; };
 		424B7F2916CB049A000B38AD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		428FF70D15F36888007A88FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		428FF70F15F36888007A88FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -878,22 +842,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4249685E2218886C00776D68 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				424968662218886C00776D68 /* RZFitFile.framework */,
-				424968682218886C00776D68 /* RZFitFileTests.xctest */,
-				4249686A2218886C00776D68 /* fitios.app */,
-				4249686C2218886C00776D68 /* fitmacos.app */,
-				4249686E2218886C00776D68 /* fitparse */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		428FF6FE15F36888007A88FA = {
 			isa = PBXGroup;
 			children = (
-				4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */,
 				42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */,
 				423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */,
 				42D8AF0E1B24CE9300ADDD31 /* Tests */,
@@ -1172,10 +1123,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4249685E2218886C00776D68 /* Products */;
-					ProjectRef = 4249685D2218886C00776D68 /* fit-sdk-swift.xcodeproj */;
-				},
-				{
 					ProductGroup = 42EBBEDB1FFAB5400009B385 /* Products */;
 					ProjectRef = 42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */;
 				},
@@ -1219,41 +1166,6 @@
 			fileType = wrapper.cfbundle;
 			path = RZUtilsOSXTests.xctest;
 			remoteRef = 423D5C2D1D27F1C20068D9CE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		424968662218886C00776D68 /* RZFitFile.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RZFitFile.framework;
-			remoteRef = 424968652218886C00776D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		424968682218886C00776D68 /* RZFitFileTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RZFitFileTests.xctest;
-			remoteRef = 424968672218886C00776D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4249686A2218886C00776D68 /* fitios.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = fitios.app;
-			remoteRef = 424968692218886C00776D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4249686C2218886C00776D68 /* fitmacos.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = fitmacos.app;
-			remoteRef = 4249686B2218886C00776D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4249686E2218886C00776D68 /* fitparse */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = fitparse;
-			remoteRef = 4249686D2218886C00776D68 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		425872BF1EACA089000D4115 /* RZUtilsSwift.framework */ = {
