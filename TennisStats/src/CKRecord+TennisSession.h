@@ -23,6 +23,7 @@
 //  SOFTWARE.
 //  
 
+#if TS_ENABLED_CLOUDKIT
 #import <CloudKit/CloudKit.h>
 
 @interface CKRecord (TennisSession)
@@ -35,3 +36,4 @@
 -(NSString*)playerDescription;
 
 @end
+#endif

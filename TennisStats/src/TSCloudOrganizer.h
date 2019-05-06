@@ -24,7 +24,9 @@
 //  
 
 #import <Foundation/Foundation.h>
+#if TS_ENABLE_CLOUDKIT
 #import <CloudKit/CloudKit.h>
+#endif
 #import "TSTennisSession.h"
 
 extern NSString * kNotifyCloudFoundNewSessions;

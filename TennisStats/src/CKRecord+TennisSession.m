@@ -23,6 +23,7 @@
 //  SOFTWARE.
 //  
 
+#if TS_ENABLE_CLOUDKIT
 #import "CKRecord+TennisSession.h"
 #import "TSCloudTypes.h"
 #import "TSTennisResult.h"
@@ -84,3 +85,4 @@
 }
 
 @end
+#endif

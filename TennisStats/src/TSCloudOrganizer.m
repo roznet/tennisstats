@@ -112,6 +112,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
         self.permissionStatus = CKApplicationPermissionStatusInitialState;
         self.status = NSLocalizedString(@"Stand by", @"iCloud Status");
         // If enabled
+
         [self startCloudConnection];
     }
     return self;
@@ -140,6 +141,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
 #pragma mark - Connection
 
 -(void)startCloudConnection{
+#if TS_ENABLE_CLOUDKIT
     self.lastError = nil;
     self.status = NSLocalizedString(@"Connecting to iCloud", @"iCloud Status");
 
@@ -172,6 +174,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
         [self performSelectorOnMainThread:@selector(notify) withObject:nil waitUntilDone:NO];
 
     }];
+#endif
 }
 
 #pragma mark - Users
@@ -184,6 +187,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
     }
 }
 -(void)discoverUsers{
+#if TS_ENABLE_CLOUDKIT
     self.lastError = nil;
     self.status = NSLocalizedString(@"Searching for friends", @"iCloud Status");
     CKDiscoverAllContactsOperation *  op = [[CKDiscoverAllContactsOperation alloc] init];
@@ -211,10 +215,11 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
         }
     };
     [[CKContainer defaultContainer] addOperation:op];
-
+#endif
 }
 
 -(void)fetchCurrentUser{
+#if TS_ENABLE_CLOUDKIT
     self.lastError = nil;
     self.status = NSLocalizedString(@"Connecting to iCloud", @"iCloud Status");
 
@@ -239,6 +244,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
         }
         self.status = nil;
     }];
+#endif
 }
 
 -(NSUInteger)countOfDiscoveredUsers{
@@ -255,6 +261,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
 #pragma  mark - TennisSessions
 
 -(void)saveSession:(TSTennisSession*)session{
+#if TS_ENABLE_CLOUDKIT
     if (self.enabled) {
         self.lastError = nil;
         self.status = NSLocalizedString(@"Connecting to iCloud", @"iCloud Status");
@@ -286,8 +293,10 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
             };
         }];
     }
+#endif
 }
 -(void)retrieveSessionFromRecord:(CKRecord*)record completion:(cloudOrganizerRetrieveSessionCompletion)completion{
+#if TS_ENABLE_CLOUDKIT
     if (self.enabled && [record.recordType isEqualToString:kTSRecordTypeSession]) {
         CKReference * eventref = record[kTSRecordFieldEventDbReference];
         if (eventref) {
@@ -352,6 +361,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
             [self.publicDatabase addOperation:fetchOp];
         }
     }
+#endif
 }
 
 -(NSArray*)listSessions{
@@ -360,6 +370,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
 
 
 -(void)fetchNewSessions{
+#if TS_ENABLE_CLOUDKIT
     if (self.enabled && self.discoveredUserRecordIds) {
         self.lastError = nil;
         self.status = NSLocalizedString(@"Checking new sessions", @"iCloud Status");
@@ -415,6 +426,7 @@ NSString * kNotifyCloudFoundNewSessions = @"kNotifyCloudFoundNewSessions";
             }
         }
     }
+#endif
 }
 
 #pragma mark - Players

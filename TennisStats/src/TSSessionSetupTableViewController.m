@@ -109,7 +109,7 @@
         if ([[TSAppGlobal cloud] enabled]) {
             return ICLOUD_END;
         }else{
-            return 1;
+            return 0;
         }
     }
     return 0;

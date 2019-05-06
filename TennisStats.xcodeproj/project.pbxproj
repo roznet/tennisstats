@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4226B41A1F65D398009E1104 /* TSSessionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226B4191F65D398009E1104 /* TSSessionListTableViewController.swift */; };
-		42280D411F5477C000724581 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42280D401F5477C000724581 /* CloudKit.framework */; };
 		42306C311F5C5F7500FC7CCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428FF70F15F36888007A88FA /* Foundation.framework */; };
 		42306C321F5C5F7D00FC7CCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428FF70D15F36888007A88FA /* UIKit.framework */; };
 		42306C341F5C5FC400FC7CCB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42306C331F5C5FC400FC7CCB /* XCTest.framework */; };
@@ -282,7 +281,6 @@
 		42200E9C17EEF0EC0078B45A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4226B4181F65D398009E1104 /* tennisstats-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tennisstats-Bridging-Header.h"; sourceTree = "<group>"; };
 		4226B4191F65D398009E1104 /* TSSessionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSessionListTableViewController.swift; sourceTree = "<group>"; };
-		42280D401F5477C000724581 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		42306C331F5C5FC400FC7CCB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		423494421609275E00A770D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		423494441609276B00A770D6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -468,7 +466,6 @@
 				42AA8E581F5474AC009734D4 /* RZUtils.framework in Frameworks */,
 				42AA8E591F5474AC009734D4 /* RZUtilsSwift.framework in Frameworks */,
 				42AA8E5A1F5474AC009734D4 /* RZUtilsTouch.framework in Frameworks */,
-				42280D411F5477C000724581 /* CloudKit.framework in Frameworks */,
 				42AA8E5B1F5474AC009734D4 /* RZUtilsUniversal.framework in Frameworks */,
 				59E4EC235662135D543715DF /* libPods-tennisstats.a in Frameworks */,
 			);
@@ -868,7 +865,6 @@
 			isa = PBXGroup;
 			children = (
 				42306C331F5C5FC400FC7CCB /* XCTest.framework */,
-				42280D401F5477C000724581 /* CloudKit.framework */,
 				42F1356E1B8BB2BE006D186A /* libsqlite3.tbd */,
 				42DE53BF19CF696E00009130 /* HealthKit.framework */,
 				42200E9C17EEF0EC0078B45A /* StoreKit.framework */,
@@ -1070,7 +1066,7 @@
 								enabled = 1;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};

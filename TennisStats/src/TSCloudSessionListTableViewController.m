@@ -82,6 +82,8 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     GCCellGrid * rv = [GCCellGrid gridCell:tableView];
+    
+#if TS_ENABLE_CLOUDKIT
     [rv setupForRows:3 andCols:2];
     CKRecord * record = [[TSAppGlobal cloud] listSessions][indexPath.row];
 
@@ -98,6 +100,11 @@
 
     [rv labelForRow:2 andCol:0].attributedText = [RZViewConfig attributedString:[record userNameDescription]
                                                                       attribute:@selector(attribute14Gray)];
+#else
+    [rv setupForRows:1 andCols:1];
+    [rv labelForRow:0 andCol:0].text = NSLocalizedString(@"iCloud Disabled", @"UI");
+#endif
+    
     return rv;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
