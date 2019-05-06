@@ -847,8 +847,8 @@
 			children = (
 				42EBBEDA1FFAB5400009B385 /* RZExternal.xcodeproj */,
 				423D5C201D27F1C20068D9CE /* RZUtils.xcodeproj */,
-				42D8AF0E1B24CE9300ADDD31 /* Tests */,
 				42AA8D621F547151009734D4 /* TennisStats */,
+				42AA8D7B1F547151009734D4 /* TennisStatsTests */,
 				428FF70C15F36888007A88FA /* Frameworks */,
 				428FF70A15F36888007A88FA /* Products */,
 				DDB2BED70E3EC1E6D15FAD8A /* Pods */,
@@ -979,14 +979,6 @@
 				42C82A9E201FC4AA00A23815 /* session_20150117100009.db */,
 			);
 			path = samples;
-			sourceTree = "<group>";
-		};
-		42D8AF0E1B24CE9300ADDD31 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				42AA8D7B1F547151009734D4 /* TennisStatsTests */,
-			);
-			name = Tests;
 			sourceTree = "<group>";
 		};
 		42EBBEDB1FFAB5400009B385 /* Products */ = {
