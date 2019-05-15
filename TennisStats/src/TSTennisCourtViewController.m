@@ -288,8 +288,6 @@ const CGFloat kScoreTop = 10.;
     [self.view addSubview:self.sliderButtons[tsSliderNextIcon]];
     [self.view addSubview:self.sliderButtons[tsSliderStepIcon]];
 
-    [self setupFrames:self.view.frame];
-
     [self changeSession:[[TSAppGlobal organizer] currentSession]];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sessionChangedCallback) name:kNotifyOrganizerSessionChanged object:nil];
@@ -625,10 +623,25 @@ const CGFloat kScoreTop = 10.;
 
 -(void)setupFrames:(CGRect)rect{
     CGRect courtFrame = self.view.frame;
-
+    
+    UIEdgeInsets screenSafe = [[[[UIApplication sharedApplication] delegate] window] safeAreaInsets];
+    
+    CGFloat topBase = 0.0;
+    CGFloat bottomBase = 0.0;
+    if( screenSafe.top >= 44.){
+        //iPhone X notch
+        courtFrame.origin.y += screenSafe.top;
+        courtFrame.size.height -= screenSafe.top;
+        
+        courtFrame.size.height -= screenSafe.bottom;
+        self.view.frame = courtFrame;
+        topBase = screenSafe.top;
+        bottomBase = screenSafe.bottom;
+    }
+    
     //CGFloat fullWidth = self.view.frame.size.width;
     CGFloat courtWidth = courtFrame.size.width;
-    if (courtWidth>500) {
+    if (courtWidth > 500) {
         courtWidth = 450;
     }
     courtFrame.size.width = courtWidth;
@@ -637,8 +650,10 @@ const CGFloat kScoreTop = 10.;
     courtFrame.origin.y += kCourtTopMargin;
     courtFrame.size.height -= kCourtTopMargin + kCourtBottomMargin;
     courtFrame.size.width  -= kCourtLeftMargin+kCourtRightMargin;
-    CGRect scoreFrame = CGRectMake(5., kScoreTop, courtWidth-10., kScoreHeight);
-    CGRect backDescFrame = CGRectMake(kTextSideMargin, kTextSpacing+kTextTopMargin, courtWidth-2*(kTextSideMargin), kCourtTopMargin - (kTextSpacing*2));
+    
+    CGRect scoreFrame = CGRectMake(5., topBase+kScoreTop, courtWidth-10., kScoreHeight);
+    CGRect backDescFrame = CGRectMake(kTextSideMargin, topBase+kTextSpacing+kTextTopMargin,
+                                      courtWidth-2*(kTextSideMargin), kCourtTopMargin - (kTextSpacing*2));
     CGRect frontDescFrame =CGRectMake(kTextSideMargin, CGRectGetMaxY(courtFrame)+kTextSpacing, courtWidth-2*(kTextSideMargin), kCourtBottomMargin - (kTextSpacing*2));
 
     [self.geometry calculateFor:CGRectMake(0., 0., courtFrame.size.width, courtFrame.size.height)];
@@ -701,7 +716,7 @@ const CGFloat kScoreTop = 10.;
     self.frontScore.frame = frontDescFrame;
 
     CGRect iconRect = CGRectZero;
-    iconRect.origin.y = kCourtTopMargin;
+    iconRect.origin.y = topBase + kCourtTopMargin;
 
     for (TSIconViewInfo * info in self.topRightIcons) {
         UIImageView * iv = info.imageView;
@@ -712,7 +727,7 @@ const CGFloat kScoreTop = 10.;
         iconRect.origin.y += is.height+kIconSpacing;
     }
 
-    iconRect.origin.y = rect.size.height-kCourtBottomMargin;
+    iconRect.origin.y = rect.size.height-kCourtBottomMargin-bottomBase;
     for (TSIconViewInfo * info in self.bottomRightIcons) {
         UIImageView * iv = info.imageView;
         CGSize is = iv.frame.size;
@@ -722,8 +737,8 @@ const CGFloat kScoreTop = 10.;
         iv.frame = iconRect;
     }
 
-    self.userBack.frame = CGRectMake(2., kCourtTopMargin, 32., 32.);
-    self.userFront.frame = CGRectMake(2., rect.size.height-kCourtBottomMargin-32., 32., 32.);
+    self.userBack.frame = CGRectMake(2., topBase+kCourtTopMargin, 32., 32.);
+    self.userFront.frame = CGRectMake(2., rect.size.height-kCourtBottomMargin-32.-bottomBase, 32., 32.);
 
 }
 
